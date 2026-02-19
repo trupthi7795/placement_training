@@ -1,0 +1,25 @@
+import java.util.*;
+public class ArmStrong{
+    public static void main(String[] args) {
+        Scanner obj=new Scanner(System.in);
+        System.out.println("ENTER THE NUMBER:");
+        int n=obj.nextInt();
+        int temp=n,sum=0;
+        int count=0;
+            while(temp!=0){
+             count++;
+             temp=temp/10;
+            }
+            temp=n;
+            while(temp!=0){
+                int d=temp%10;
+                sum+=Math.pow(d,count);
+                temp=temp/10;
+            }
+            if(n==sum)
+            {
+                System.out.println("IS ARMSTRONG NO.");
+            }else
+            System.out.println("IS NOT ARMSTRONG NO.");
+        }
+    }
