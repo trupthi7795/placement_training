@@ -1,0 +1,15 @@
+package static_ex;
+
+public class variable {
+	static String college="sapthagiri";
+	String name;
+
+	public static void main(String[] args) {
+		variable ob=new variable();
+		variable ob1=new variable();
+		System.out.println(ob.college);
+		System.out.println(ob1.college);
+		
+	}
+
+}

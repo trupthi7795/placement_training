@@ -1,0 +1,21 @@
+Class Student {
+    String name;
+    int age;
+    Student(){
+     System.out.println("default constructor");   
+    }
+    Student(String name,int aage){
+        this();
+        this.name=name;
+        this.age=age;
+    }
+    void display(){
+        System.out.println(name+" "+age);
+    }
+    public static void main(String[] args) {
+        Student ob=new Student("Viju",20);
+        ob.name="viju";
+        ob.age=20;
+        System.out.println(ob.name+" "+ob.age);
+    }
+}
